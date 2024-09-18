@@ -10,6 +10,14 @@ public class Main {
         assert f.toString().equals("Je suis une fraction de nominateur 0 et de denominateur 1");
         assert f1.toString().equals("Je suis une fraction de nominateur 1 et de denominateur 1");
         assert f2.toString().equals("Je suis une fraction de nominateur 1 et de denominateur 2");
+
+        // Question 4
+        assert f.getDenominateur() == 1;
+        assert f.getNominateur() == 0;
+
+        assert f1.getDenominateur() == 1;
+        assert f1.getNominateur() == 1;
+
         System.out.println(f);
         System.out.println(f1);
         System.out.println(f2);

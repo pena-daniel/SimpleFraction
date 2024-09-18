@@ -8,8 +8,9 @@ public class Fraction {
         this.nominateur = nominateur;
         if (denominateur == 0){
             this.denominateur = 1;
+        }else{
+            this.denominateur = denominateur;
         }
-        this.denominateur = denominateur;
     }
 
     public Fraction(Integer nominateur) {
@@ -22,10 +23,20 @@ public class Fraction {
         this.denominateur = 1;
     }
 
+    public Integer getNominateur() {
+        return nominateur;
+    }
+
+    public Integer getDenominateur() {
+        return denominateur;
+    }
+
     @Override
     public String toString() {
         return "Je suis une fraction de nominateur "+nominateur+" et de denominateur "+denominateur;
     }
+
+
 
 
 }
