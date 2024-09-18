@@ -18,6 +18,12 @@ public class Main {
         assert f1.getDenominateur() == 1;
         assert f1.getNominateur() == 1;
 
+
+        // Question 5
+        assert f.doubleValue() == 0;
+        assert f1.doubleValue() == 1;
+        assert f2.doubleValue() == 0.5;
+
         System.out.println(f);
         System.out.println(f1);
         System.out.println(f2);

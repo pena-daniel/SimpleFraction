@@ -31,6 +31,14 @@ public class Fraction {
         return denominateur;
     }
 
+
+    public Float doubleValue(){
+        return (float) (nominateur/denominateur);
+    }
+
+
+
+
     @Override
     public String toString() {
         return "Je suis une fraction de nominateur "+nominateur+" et de denominateur "+denominateur;
