@@ -36,6 +36,12 @@ public class Fraction {
         return (float) (nominateur/denominateur);
     }
 
+    public Fraction add(Fraction f){
+        Integer n = (nominateur * f.denominateur)+(denominateur*f.nominateur);
+        Integer d = f.denominateur * denominateur;
+        return new Fraction(n,d);
+    }
+
 
 
 

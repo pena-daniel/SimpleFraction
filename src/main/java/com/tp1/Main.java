@@ -24,6 +24,13 @@ public class Main {
         assert f1.doubleValue() == 1;
         assert f2.doubleValue() == 0.5;
 
+        // Question 5
+        Fraction f3 = new Fraction(1,1);
+        Fraction f4 = new Fraction(3,2);
+
+        assert f.add(f1).doubleValue().equals(f3.doubleValue());
+        assert f1.add(f2).doubleValue().equals(f4.doubleValue());
+
         System.out.println(f);
         System.out.println(f1);
         System.out.println(f2);
