@@ -42,6 +42,19 @@ public class Fraction {
         return new Fraction(n,d);
     }
 
+    public Fraction reduite(){
+        Integer pgcd = findGCD(denominateur, nominateur);
+
+        return new Fraction(nominateur/pgcd, denominateur/pgcd);
+    }
+
+    public static int findGCD(int a, int b) {
+        if (b == 0) {
+            return a;
+        }
+        return findGCD(b, a % b);
+    }
+
 
 
 

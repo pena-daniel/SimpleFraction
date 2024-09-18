@@ -31,6 +31,12 @@ public class Main {
         assert f.add(f1).doubleValue().equals(f3.doubleValue());
         assert f1.add(f2).doubleValue().equals(f4.doubleValue());
 
+        // Question 7
+        Fraction f5 = new Fraction(4,6);
+        Fraction f6 = new Fraction(8,12);
+
+        assert f5.reduite().equals(f6.reduite());
+
         System.out.println(f);
         System.out.println(f1);
         System.out.println(f2);
