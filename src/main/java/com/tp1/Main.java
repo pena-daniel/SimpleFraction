@@ -28,8 +28,8 @@ public class Main {
         Fraction f3 = new Fraction(1,1);
         Fraction f4 = new Fraction(3,2);
 
-        assert f.add(f1).doubleValue().equals(f3.doubleValue());
-        assert f1.add(f2).doubleValue().equals(f4.doubleValue());
+        assert f.add(f1).doubleValue() == f3.doubleValue();
+        assert f1.add(f2).doubleValue() == f4.doubleValue();
 
         // Question 7
         Fraction f5 = new Fraction(4,6);
@@ -37,9 +37,19 @@ public class Main {
 
         assert f5.reduite().equals(f6.reduite());
 
+        // Question 7
+        assert f5.compare(f6) == 0; // is equals
+        assert f1.compare(f2) == 1 ;// f1 is greater
+        assert f5.compare(f1) == -1 ;// f5 is less
+
         System.out.println(f);
         System.out.println(f1);
         System.out.println(f2);
+
+        // Vérifiez avec le code ci-dessous
+        Number aNumber = java.math.BigDecimal.ONE;
+        Number anotherNumber = new Fraction(1, 2);
+        assert java.lang.Math.abs(aNumber.doubleValue() + anotherNumber.doubleValue() - 1.5) < 1E-8;
 
     }
 }
